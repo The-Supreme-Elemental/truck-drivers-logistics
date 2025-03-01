@@ -34,3 +34,15 @@ Below is a detailed guide for using version control so nothing gets corrupted! W
   ```
 10. We will repeat everything that we did above and this will be an efficient way to avoid main branch merging conflicts.
 
+## Project Description
+
+1. Create a machine learning model that can predict logistics delay based on weather, temperature, humidity, shipment status, and other factors.
+2. Turn predictions into tokens that LLM can process and create recommendation reports.
+3. Host reports on a website to view. Add in charts to help explain correlation factors.
+
+## Project tools/packages
+
+Machine Learning - Python, pytorch, kfold cross validation, numpy, pandas
+
+### Links
+
