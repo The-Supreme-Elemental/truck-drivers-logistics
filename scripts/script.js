@@ -13,7 +13,7 @@ var myChart = new Chart(ctx, {
     }
 });
 
-setInterval(function() {
+setInterval(function () {
     var newDataPoint = Math.floor(Math.random() * 100);
     myChart.data.datasets[0].data.push(newDataPoint);
     myChart.data.labels.push("New Label");
@@ -21,9 +21,29 @@ setInterval(function() {
 }, 1000);
 
 fetch("smart_logistics_dataset.csv")
-.then(response => response.text())
-.then(text => {
-    console.log(text);
-})
-.catch(error)
+    .then(response => response.text())
+    .then(text => {
+        console.log(text);
+    })
+    .catch(error)
 console.error("Error fetching csv:", error);
+
+const fileInput = document.getElementById("csv-file");
+
+fileInput.addEventListener("change", function (event) {
+    const file = event.target.files[0];
+    console.log("File selected", file)
+
+    Papa.parse(file, {
+        complete: function (results) {
+            console.log("Parsed csv data", results.data);
+            processCVSData(results.data);
+        }
+    })
+});
+
+function processCVSData(data) {
+    data.forEach(row => {
+        console.log(row);
+    });
+}

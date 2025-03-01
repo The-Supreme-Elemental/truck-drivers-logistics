@@ -3,37 +3,44 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+  rel="stylesheet">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Logistics Delay Predictions for Truck Drivers</title>
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="icon" type="image/png" href="images/Logistics.Ai_logo.png" />
-    <script src="scripts/script.js" defer></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logistics Delay Predictions for Truck Drivers</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="icon" type="image/png" href="images/Logistics.Ai_logo.png" />
+  <script src="scripts/script.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 
-  <body>
-    <canvas id="myChart"></canvas>
-    <header>
-      <a id="logo_link" href="index.html">
-        <div id="logo_whole">
-        <img
-          class="logo"
-          src="images/Logistics.Ai_logo.png"
-          alt="Logisitic AI logo"
-        /><p id="logo_name">Logistics.Ai</p>
-    </div>
-        </a
-      >
-      <nav>
-        <a href="#">Resources</a>
-        <a href="#">HackUSU 2025</a>
-        <a href="contactus.html">About Us</a>
-      </nav>
-    </header>
-    <div id = "main-report">
+</head>
+
+<body>
+
+  <div id="output"></div>
+
+  <canvas id="myChart"></canvas>
+  <header>
+    <a id="logo_link" href="index.html">
+      <div id="logo_whole">
+        <img class="logo" src="images/Logistics.Ai_logo.png" alt="Logisitic AI logo" />
+        <p id="logo_name">Logistics.Ai</p>
+      </div>
+    </a>
+    <nav>
+      <a href="#">Resources</a>
+      <a href="#">HackUSU 2025</a>
+      <a href="contactus.html">About Us</a>
+    </nav>
+  </header>
+
+
+  <div id="main-report">
+    <input type="file" id="csv-file" accept="file/csv" />
+    <label for="csv-file">Click to integrate your CSV file. </label>
     <div class="report">
       <h1>Recommendation Report for Weather</h1>
     </div>
@@ -55,10 +62,13 @@
     <div class="report">
       <h1>Recommendation Report for Time of Day</h1>
     </div>
-    
-    
+
+    <h1><a href="https://colab.research.google.com/drive/1d4x2wDoDhbcHlWDI_A8rFqZGOz6m18vn?usp=sharing">Our Google Colab
+      Findings</a></h1>
+
 
     <h1>Charts based on Correlation Factors</h1>
-</div>
-  </body>
+  </div>
+</body>
+
 </html>
