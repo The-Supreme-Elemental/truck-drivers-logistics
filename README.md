@@ -5,7 +5,7 @@ Below is a detailed guide for using version control so nothing gets corrupted! W
 
 
 
-# This is what we have to do as a team to build an awesome application using Version Control:
+## This is what we have to do as a team to build an awesome application using Version Control:
 1. First clone the repository: `git clone https://github.com/The-Supreme-Elemental/truck-drivers-logistics.git`
 2. Now get into the directory that was just cloned from the github.
 3. You are currently on main branch, make sure to create a new branch: `git checkout -b lastname-issue`
