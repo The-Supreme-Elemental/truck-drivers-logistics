@@ -13,9 +13,9 @@
     <link rel="icon" type="image/png" href="images/Logistics.Ai_logo.png" />
     <script src="scripts/script.js" defer></script>
   </head>
-
+  <canvas id="myChart"></canvas>
   <body>
-    <canvas id="myChart"></canvas>
+    <div id= "content1"></div>
     <header>
       <a id="logo_link" href="index.html">
         <div id="logo_whole">
@@ -23,17 +23,37 @@
           class="logo"
           src="images/Logistics.Ai_logo.png"
           alt="Logisitic AI logo"
-        /><p id="logo_name">Logistics.Ai</p>
-    </div>
-        </a
-      >
-      <nav>
+        />Logistics.Ai
+    </div></a>
+    <nav>       
         <a href="#">Resources</a>
         <a href="#">HackUSU 2025</a>
         <a href="contactus.html">About Us</a>
       </nav>
     </header>
     <div id = "main-report">
+    <div class="hero-content">
+        <div id="hero-msg1">
+            <div id="line_gap">
+            <h1>
+                <div id="AI_word" style="display: inline;">AI</div>
+                <div id="logistic" style="display: inline;"> - Forecast for Logistics Delay</div>
+              </h1>
+            </div>  
+        <p><div id ="sub-hero-msg">Logisitics AI is a platform that predicts logistic delay gathered data and algorithim for your logistic companies and truck drivers.</div></p>
+        <p><a href="#"><div id ="try">Free Trial</div></a></p>
+    </div>
+        
+        <div id="truck_video">
+            <video
+              id="truck"
+              autoplay loop muted>
+              <source src="videos/Logistic.Ai_truck.mp4"
+              type = "video/mp4"
+            />
+        </video>
+        </div>
+      </div>
     <div class="report">
       <h1>Recommendation Report for Weather</h1>
     </div>
@@ -55,10 +75,21 @@
     <div class="report">
       <h1>Recommendation Report for Time of Day</h1>
     </div>
+
+    <h1>Recommendation Report for Traffic</h1>
+</div>
+<div class="report">
+  <h1>Recommendation Report for Road Conditions</h1>
+</div>
+<div class="report">
+  <h1>Recommendation Report for Time of Day</h1>
+</div>
+    
     
     
 
     <h1>Charts based on Correlation Factors</h1>
-</div>
+
   </body>
+</div>
 </html>

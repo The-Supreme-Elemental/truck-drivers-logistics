@@ -1,66 +1,148 @@
-
 header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    position: sticky;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: sticky;
   top: 0;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent */
   backdrop-filter: blur(10px); /* Adds a blur effect */
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* Initially no shadow */
-  transition: box-shadow 0.3s ease-in-out;
-  z-index: 1000;
-  margin-top: -200px;
+  transition: border-bottom 0.3s ease-in-out;
+  z-index: 1;
+  padding: 8px;
 }
 
-header.scrolled{
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-}
-
-
-header a{
-   text-decoration: none;
-   font-family: Rubik;
-   color: #0A1931;
-} 
+header {
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  html:has(body:hover) header {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
 
 nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
- 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
 }
 
-#logo_whole{
-    display: flex;
+nav a {
+  text-decoration: none;
+  font-family: Rubik;
+  color: #0a1931;
+  font-weight: 504;
+  transition: font-size 0.4s, background 0.4s ease-in-out;
+  
+  
+}
+
+nav a:hover{
+    font-size: 18px;
+    opacity: 0.8;
+}
+#logo_whole {
+  display: flex;
   align-items: center;
   gap: 4px;
+  justify-self: start; /* Aligns the grid item to the left */
+  grid-column: 1 / 2;
   margin-left: 16px;
 }
 
 #logo_link img {
-    width: 40px;
-  }
+  width: 40px;
 
-#logo_name{
-    font-size: 24px;
-    font-weight: 500;
 }
 
-body{
-    margin-top: -100px;
+#logo_link {
+  font-size: 24px;
+  font-weight: 508;
+  font-family: Rubik;
+  color: #0a1931;
+  text-decoration: none;
+  
 }
 
-#main-report{
-    margin-top: 160px;
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: -300px;
 }
 
-h1{
-    font-family: Roboto;
+#main-report {
+  margin-top: 150px;
 }
 
+h1 {
+  font-family: Roboto;
+}
 
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
+#hero-msg1 {
+    margin-top: 20px;
+  margin-left: 30px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-size: 40px;
+}
 
+#AI_word {
+  font-size: 80px;
+  background: linear-gradient(to top, #f95738, #ffd700);
+  -webkit-background-clip: text;
+  color: transparent;
+}
 
+#logistic {
+  color: #0a1931;
+}
 
+#line_gap {
+  margin-top: -30px;
+  margin-bottom: -30px;
+}
+
+#sub-hero-msg {
+  font-family: Roboto;
+  font-size: 25px;
+  color: grey;
+  max-width: 600px;
+  line-height: 1.5;
+  margin-bottom: -10px;
+}
+
+#try {
+  font-family: Roboto;
+  background-color: #0a1931;
+  max-width: 200px;
+  padding: 5px 3px;
+  border-radius: 10px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  transition: font-size 0.4s, background 0.4s ease-in-out;
+}
+
+#try a {
+  text-decoration: none;
+  color: white;
+}
+
+#try:hover {
+  font-size: 33px;
+  max-width: 205px;
+  background: linear-gradient(to top, #ffd700, #f95738);
+}
+
+#truck_video {
+    margin-top: 20px;
+  grid-row: 1/2;
+  width: 100%;
+  height: auto;
+  margin-left: 80px;
+}
