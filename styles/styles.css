@@ -1,17 +1,66 @@
-#logo_link img {
-  width: 50px;
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent */
+  backdrop-filter: blur(10px); /* Adds a blur effect */
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* Initially no shadow */
+  transition: box-shadow 0.3s ease-in-out;
+  z-index: 1000;
+  margin-top: -200px;
 }
 
-.nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #fff; /* Change to match your design */
-  padding: 10px 20px;
-  z-index: 1000; /* Ensures it stays above other content */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for visibility */
+header.scrolled{
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
-body {
-  padding-top: 60px; /* Adjust based on navbar height to prevent content overlap */
+
+
+header a{
+   text-decoration: none;
+   font-family: Rubik;
+   color: #0A1931;
+} 
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ 
 }
+
+#logo_whole{
+    display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 16px;
+}
+
+#logo_link img {
+    width: 40px;
+  }
+
+#logo_name{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+body{
+    margin-top: -100px;
+}
+
+#main-report{
+    margin-top: 160px;
+}
+
+h1{
+    font-family: Roboto;
+}
+
+
+
+
+
+
