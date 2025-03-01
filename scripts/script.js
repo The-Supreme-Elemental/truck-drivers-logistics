@@ -19,3 +19,11 @@ setInterval(function() {
     myChart.data.labels.push("New Label");
     myChart.update();
 }, 1000);
+
+fetch("smart_logistics_dataset.csv")
+.then(response => response.text())
+.then(text => {
+    console.log(text);
+})
+.catch(error)
+console.error("Error fetching csv:", error);
