@@ -42,7 +42,14 @@ Below is a detailed guide for using version control so nothing gets corrupted! W
 
 ## Project tools/packages
 
-Machine Learning - Python, pytorch, kfold cross validation, numpy, pandas
+Machine Learning - Python, XGBoost, XGBClassifier, GridSearch, kfold cross validation, numpy, pandas
+AI- Open AI version 2 from Huggingface. GPT2LMHeadModel, GPT2Tokenizer
+UI - HTML/CSS, JavaScript, PapaParse 
 
-### Links
+## Dataset
+[Smart Logistics Supply Chain Dataset](https://www.kaggle.com/datasets/ziya07/smart-logistics-supply-chain-dataset)
+
+### Helpful links
+- [Huggingface](https://huggingface.co/)
+- [PapaParse](https://www.papaparse.com/)
 
