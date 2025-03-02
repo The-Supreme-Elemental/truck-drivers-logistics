@@ -1,7 +1,12 @@
 # Truck Driver Logistics program!
 
-Below is a detailed guide for using version control so nothing gets corrupted! We got this team!
+## Contributors
+- Keith Crawford (Machine Learning and AI Prompts)
+- Chris Hylton (UI)
+- Natalia Navarrete (Machine Learning)
+- Kosei Hatakenaka (UI)
 
+Below is a detailed guide for using version control so nothing gets corrupted! We got this team!
 
 
 
@@ -52,4 +57,3 @@ Below is a detailed guide for using version control so nothing gets corrupted! W
 ### Helpful links
 - [Huggingface](https://huggingface.co/)
 - [PapaParse](https://www.papaparse.com/)
-
